@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/medical-logo.jpg" class="img">
+            </div>
+            <!-- <input type="checkbox" name="" id="responsive_menu">
+            <label for="responsive_menu"></label> -->
+            <div class="bar">
+                <a href="#home" class="home" >Home</a>
+                <a href="#portfolio" class="portfolio">About Us</a>
+                <a href="#services" class="services">Services</a>
+                <!-- <a href="#testimonials" class="testimonials">Testimonials</a> -->
+                <a href="#contact" class="contact">Contact</a>
+                <div class="responsive">
+                    <a><i class="las la-bars"></i></a>
+                    <!-- <div class="droplist">
+                        <a href="#">More Links <i class="las la-angle-right"></i></a> -->
+                        <div class="drop">
+                            <a href="#">Home</a>
+                            <!-- <a href="#">Portfolio</a> -->
+                            <a href="#">Services</a>
+                            <a href="#">Testimonials</a>
+                            <a href="#">Contact</a>
+                        </div>
+                </div>
+                    
+            </div>  
+        </div>
+        <!-- <section class="container">
+            <div class="slide-wrapper">
+                <div class="slider">
+                    <img id="slide-1" src="images/slide-01.jpg">
+                    <img id="slide-2" src="images/slide-02.jpg">
+                    <img id="slide-3" src="images/slide-03.jpg">
+                </div>
+                <div class="slider-nav">
+                    <a href="slide-1"></a>
+                    <a href="slide-2"></a>
+                    <a href="slide-3"></a>
+                </div>
+            </div>
+        </section> -->
+        <div class="slider-container">
+            <div class="menu">
+                <label for="slide-dot-1"></label>
+                <label for="slide-dot-2"></label>
+                <label for="slide-dot-3"></label>
+            </div>
+    
+            <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
+            <img class="slide-img" src="images/slide-01.jpg">
+    
+            <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
+            <img class="slide-img" src="images/slide-02.jpg">
+    
+            <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
+            <img class="slide-img" src="images/slide-03.jpg">
+        </div>
+        <div class="par">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam fugiat voluptates voluptas blanditiis quo rerum sed delectus numquam libero<br>temporibus aliquam provident deleniti architecto vel nesciunt modi et eos expedita</p>
+        </div>
+        <section class="container">
+            <div class="card">
+                <div class="card-image image-1"></div>
+                <h2>What We are</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam fugiat voluptates voluptas blanditiis</p>
+                <a href="">READ MORE</a>
+            </div>
+            <div class="card">
+                <div class="card-image image-2"></div>
+                <h2>Start Our Project</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam fugiat voluptates voluptas blanditiis</p>
+                <a href="">READ MORE</a>
+            </div>
+            <div class="card">
+                <div class="card-image image-3"></div>
+                <h2>Our Team</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam fugiat voluptates voluptas blanditiis</p>
+                <a href="">READ MORE</a>
+            </div>         
+        </section>
+
+        <div class="main"> 
+            <div class="row">
+                <div class="column">
+                    <div class="content">
+                    <img src="images/pexels-anna-shvets-4225880.jpg" style="width:100%">
+                    <h3>Internal diseases</h3>
+                    <p>Lorem ipsum </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                    <img src="images/pexels-pixabay-263337.jpg" style="width:100%">
+                    <h3>Sugery</h3>
+                    <p>Lorem ipsum </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                    <img src="images/pexels-cottonbro-studio-6502744.jpg" style="width:100%">
+                    <h3>Anesthesia</h3>
+                    <p>Lorem ipsum </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                    <img src="images/pexels-cottonbro-studio-6529057.jpg" style="width:100%">
+                    <h3>Dental care</h3>
+                    <p>Lorem ipsum </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-content">
+            <div>
+            <h2>ALWAYS SUPPORT YOU</h2>
+            <h1>HOW CAN WE HELP?</h1>
+            <hr size="5" width="15%" color= #007bff > 
+            <form action="/action_page.php">
+              <input type="text" class="name" id="name" name="fullname" placeholder="Full name">
+          
+              <input type="text" class="address" id="address" name="emailaddress" placeholder="Email address">
+
+              <textarea class="subject" id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
+          
+              <input type="button" id="submit" onclick="submitData()" value="Submit">
+              <div id="showJson"></div>
+            </form>
+            </div>
+        </div>
+        <script>
+            function submitData(){
+                var name =$('#name').val();
+                var address =$('#address').val();
+                var subject =$('#subject').val();
+                jsonObject={
+                    "Name":"",
+                    "Address":"",
+                    "Subject":""
+                }
+                jsonObject.Name=name;
+                jsonObject.Address=address;
+                jsonObject.Subject=subject;
+                var str=JSON.stringify(jsonObject);
+                //document.write(str);
+                document.getElementById('showJson').innerHTML=str;
+            }
+        </script>
+        <div class="block">
+            <h1>My Blog Posts</h1>
+            <section id="posts"></section>
+            <template id="post-template">
+                <div class="post">
+                    <img src="" alt="" class="post__img">
+                    <h4 class="post__title"></h4>
+                    <p class="post__body"></p>
+                </div>
+            </template>
+        </div>
+       
+    </header>
+    <footer>
+        <div class="container-footer">
+            <div class="row-footer">
+                  <div class="col" id="company">
+                      <h3>Medical Center</h3>
+                      <p>
+                        We are specialized in Medical services
+                      </p>
+                      <div class="social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                      </div>
+                      <!-- <button id="dark-mode" class="moon" onclick=""changeMode()><i class="las la-moon"></i></button> -->
+                      <!-- <button id="light-mode" class="sun"><i class="las la-sun"></i></button> -->
+                  </div>
+
+
+                  <div class="col" id="services">
+                     <h3>Services</h3>
+                     <div class="links">
+                        <a href="#">Surgery</a>
+                        <a href="#">Anesthesia</a>
+                        <a href="#">Dental care</a>
+                        <a href="#">Medical diseases</a>
+                     </div>
+                  </div>
+
+                  <div class="col" id="useful-links">
+                     <h3>Links</h3>
+                     <div class="links">
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Our Policy</a>
+                        <a href="#">Help</a>
+                     </div>
+                  </div>
+
+                  <div class="col" id="contact">
+                      <h3>Contact</h3>
+                      <div class="contact-details">
+                         <i class="fa fa-location"></i>
+                         <p>FF-42, Procube Avenue, <br> NY, USA</p>
+                      </div>
+                      <div class="contact-details">
+                         <i class="fa fa-phone"></i>
+                         <p>+1-8755856858</p>
+                      </div>
+                  </div>
+            </div>
+
+            <div class="row-footer">
+                  <div class="form">
+                    <form action="">
+                        <input type="text" placeholder="Email here...">
+                        <button><i class="fa fa-paper-plane"></i></button>
+                    </form>
+                  </div>
+            </div>
+
+        </div>
+        <div id="toggle">
+            <i class="indicator"></i>
+        </div>
+        <script>
+            const body = document.querySelector('body');
+            const toggle = document.getElementById('toggle');
+            toggle.onclick = function(){
+                toggle.classList.toggle('active');
+                body.classList.toggle('active');
+            }
+        </script>
+     </footer>
+    <!-- <footer class="footer-distributed">
+        <div class="footer left">
+            <h3>Medical<span>Center</span></h3>
+            <p class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </p>
+            <p class="footer-company-name">Copyright © 2022 <strong>MedicalCenter</strong> All rights reserved</p>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="las la-map-marker"></i>
+                <p><span>Casablanca</span>Morocco</p>
+            </div>
+            <div>
+                <i class="las la-phone"></i>
+                <p>+212000000000</p>
+            </div>
+            <div>
+                <i class="las la-envelope"></i>
+                <p><a href="#">madical.center@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the Center</span>
+                <strong>Medical Center</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam fugiat voluptates voluptas blanditiis quo rerum sed delectus numquam libero temporibus aliquam provident deleniti architecto vel nesciunt modi et eos expedita
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="lab la-instagram"></i></a>
+                <a href="#"><i class="lab la-facebook"></i></a>
+                <a href="#"><i class="lab la-twitter"></i></a>
+                <a href="#"><i class="lab la-youtube"></i></a>
+            </div>
+        </div>
+    </footer> -->
+    <script src="js/main.js"></script>
+</body>
+<!-- <script>
+    let icon = document.getElementById('moon');
+    function changeMode(){
+        var element = document.body;
+        element.classList.toogle("dark-mode");
+        if(element.classList.contains("dark-mode")){
+            
+        }else{
+            
+        }
+    }
+</script> -->
+</html>
